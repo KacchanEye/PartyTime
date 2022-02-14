@@ -20,7 +20,7 @@ Il progetto e' stato creato con:
 * Css
 * Flask
 
-#Deploy
+# Deploy
 - Clonare la repostitory
 ```
 git clone https://github.com/KacchanEye/PartyTime
