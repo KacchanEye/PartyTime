@@ -25,6 +25,23 @@ Il progetto e' stato creato con:
 ```
 git clone https://github.com/KacchanEye/PartyTime
 ```
+- Spostarsi nella cartella PartyTime e creare un virtual environment per Python
+```
+python3 -m venv venv
+```
+- installare le librerie richieste (guardare il file libreries.txt)
+```
+pip install libreries.txt
+```
+- Spostarsi nella cartella Flask e far partire il web-server in modo da essere raggiungibile su tutta la rete locale
+```
+flask run --host 0.0.0.0
+```
+- per farlo partire solo su local host
+```
+flask run
+```
+
 
 ## Author
 
