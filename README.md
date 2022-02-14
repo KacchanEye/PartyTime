@@ -20,6 +20,12 @@ Il progetto e' stato creato con:
 * Css
 * Flask
 
+#Deploy
+- Clonare la repostitory
+```
+git clone https://github.com/KacchanEye/PartyTime
+```
+
 ## Author
 
 👤 **Giuseppe Marano Renzo Cerqua Simone Liccardo Fabio Salese**
