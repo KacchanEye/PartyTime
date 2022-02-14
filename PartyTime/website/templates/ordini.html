@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %} Le tue feste! {% endblock %}
+{% block content %}
+<br>
+<div class="table-responsive">
+<table class="table table-dark table-striped">
+<tr>
+	<th>#</th>
+	<th>Bambini</th>
+	<th>Via</th>
+	<th>Civico</th>
+	<th>Citta</th>
+	<th>CAP</th>
+	<th>Data</th>
+	<th>Orario</th>
+	<th>Durata</th>
+	<th>Tipologia</th>
+	<th>Qualita</th>
+	<th>Totale</th>
+</tr>
+{% for party in user.feste[::-1] %}
+<tr>
+	<td>{{party.idfesta}}</td>
+	<td>{{party.nbambini}}</td>
+	<td>{{party.via}}</td>
+	<td>{{party.civico}}</td>
+	<td>{{party.citta}}</td>
+	<td>{{party.cap}}</td>
+	<td>{{party.dataf}}</td>
+	<td>{{party.oini}}</td>
+	<td>{{party.durata}}</td>
+	<td>{{party.tipo}}</td>
+	<td>{{party.qualita}}</td>
+	<td>{{party.prezzo}}</td>
+</tr>
+{% endfor %}
+</table>
+</div>
+{% endblock %}

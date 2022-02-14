@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %} Registrati {% endblock %}
+{% block content %}
+<br>
+<form method="POST">
+	<h3 align="center">Registrati</h3>
+	<table class="table table-dark table-striped">
+	<tr><td>
+  	<div class="form-group">
+		<label for="nome">UserId</label>
+		<input type="text" class="form-control" id="id" name="id" placeholder="Inserisci id">
+	</div>
+  	<div class="form-group">
+		<label for="pw1">Password</label>
+		<input type="password" class="form-control" id="pw1" name="pw1" placeholder="Inserisci password">
+	</div>
+	<div class="form-group">
+		<label for="pw2">Password (Conferma)</label>
+		<input type="password" class="form-control" id="pw2" name="pw2" placeholder="Conferma password">
+	</div>
+	<div class="form-group">
+		<label for="nome">Nome</label>
+		<input type="text" class="form-control" id="nome" name="nome" placeholder="Inserisci nome">
+	</div>
+	<div class="form-group">
+		<label for="cogn">Cognome</label>
+		<input type="text" class="form-control" id="cogn" name="cogn" placeholder="Inserisci cognome">
+	</div>
+	<div class="form-group">
+		<label for="cell">Cellulare</label>
+		<input type="tel" class="form-control" id="cell" name="cell" placeholder="Inserisci cellulare" maxlength="10" size="10">
+	</div>
+	<div class="form-group">
+		<label for="mail">Email</label>
+		<input type="email" class="form-control" id="mail" name="mail" placeholder="Inserisci email">
+	</div>
+	</td></tr>
+	</table>
+	<div align="center"><button type="submit" class="btn btn-warning">Invia</button></div>
+</form>
+{% endblock %}

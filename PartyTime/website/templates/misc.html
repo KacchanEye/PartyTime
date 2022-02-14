@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %} Misc {% endblock %}
+{% block content %}
+<br>
+<form method="POST">
+  	<h3 align="center">Evento</h3>
+  	<table class="table table-dark table-striped">
+	<tr><td>
+  	<div class="form-group">
+		<label for="nbambini">Numero Bambini</label>
+		<input type="number" class="form-control" id="nbambini" name="nbambini" min="10" max="100" step="1" value="10">
+	</div>
+	<div class="form-group">
+		<label for="via">Via</label>
+		<input type="text" class="form-control" id="via" name="via" placeholder="Inserisci via">
+	</div>
+	<div class="form-group">
+		<label for="civico">Civico</label>
+		<input type="text" class="form-control" id="civico" name="civico" placeholder="Inserisci civico">
+	</div>
+	<div class="form-group">
+		<label for="citta">Citta'</label>
+		<input type="text" class="form-control" id="citta" name="citta" placeholder="Inserisci citta'">
+	</div>
+	<div class="form-group">
+		<label for="cap">CAP</label>
+		<input type="text" class="form-control" id="cap" name="cap" placeholder="Inserisci cap" maxlength="5" size="5">
+	</div>
+	<div class="form-group">
+		<label for="dataf">Data</label>
+		<input type="date" class="form-control" id="dataf" name="dataf" min={{ mindate }} value={{ mindate }}>
+	</div>
+	<div class="form-group">
+		<label for="oini">Orario di inizio</label>
+		<input type="time" class="form-control" id="oini" name="oini" min="06:00" max="21:00" value="13:00">
+	</div>
+	<div class="form-group">
+		<label for="durata">Durata (h)</label>
+		<input type="number" class="form-control" id="durata" name="durata" min="2" max="100" step="1" value="2">
+	</div>
+	<div class="form-group">
+		<label for="qualita">Qualita</label>
+		<select class="form-control" id="qualita" name="qualita">
+  			<option value="Platinum">Platinum</option>
+  			<option value="Gold">Gold</option>
+  			<option value="Silver">Silver</option>
+		</select>
+	</div>
+	
+	</td></tr>
+	</table>
+	<div align="center"><button type="submit" class="btn btn-warning">Invia</button></div>
+</form>
+{% endblock %}
