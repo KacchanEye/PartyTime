@@ -6,7 +6,7 @@
   </a>
 </p>
 
-> PT e' una PWA creata e progettata per gli utenti che vogliono organizzare eventi o feste con animazione e spettacolo
+> PT is a PWA created and projected for users who want to organize events or parties with entertainment
 
 ### 🏠 [Homepage](https://github.com/KacchanEye/PartyTime)
 
