@@ -11,8 +11,8 @@
 ### 🏠 [Homepage](https://github.com/KacchanEye/PartyTime)
 
 
-## Tecnologie
-Il progetto e' stato creato con:
+## Tecnologies
+This Project is create with:
 * SqlAlchemy
 * Python
 * JavaScript
@@ -21,23 +21,23 @@ Il progetto e' stato creato con:
 * Flask
 
 # Deploy
-- Clonare la repostitory
+- Clone the Repository
 ```
 git clone https://github.com/KacchanEye/PartyTime
 ```
-- Spostarsi nella cartella PartyTime e creare un virtual environment per Python
+- Move to the directory PartyTime and create an virtual environment for Python
 ```
 python3 -m venv venv
 ```
-- installare le librerie richieste (guardare il file libreries.txt)
+- Install required libraries (see libreries.txt file)
 ```
 pip install libreries.txt
 ```
-- Spostarsi nella cartella Flask e far partire il web-server in modo da essere raggiungibile su tutta la rete locale
+- Move to the Flask folder and start the web server so that it can be reached on the whole local network
 ```
 flask run --host 0.0.0.0
 ```
-- per farlo partire solo su local host
+- to run it on local host only
 ```
 flask run
 ```
